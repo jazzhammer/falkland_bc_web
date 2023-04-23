@@ -1,0 +1,32 @@
+.fbc-form {
+    padding: 10px;
+}
+
+.fbc-form-title {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.fbc-form-item {
+    color: white;
+}
+
+.fbc-form-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.fbc-form-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.fbc-radio-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.fbc-radio-row {
+    display: flex;
+    flex-direction: column;
+}

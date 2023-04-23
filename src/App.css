@@ -15,13 +15,82 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 24pt;
   color: white;
+  padding-top: 8px;
+}
+
+.App-header-by-line {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14pt;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.App-left {
+  background-color: #dedede;
+  min-height: 100vh;
+  min-width: 20%;
+  max-width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 12pt;
+  color: black;
+  padding: 5px;
+  padding-top: 15px;
+}
+
+.App-middle {
+  background-color: green;
+  min-height: 100vh;
+  min-width: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 12pt;
+  padding: 5px;
+}
+
+.App-right {
+  background-color: #dedede;
+  min-height: 100vh;
+  min-width: 20%;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 12pt;
+  color: black;
+  padding: 5px;
+}
+
+.App-menu-header {
+  background-color: white;
+  color: blue;
+  font-size: 12pt;
 }
 
 .App-link {
@@ -35,4 +104,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.form-header {
+  font-size: 12pt;
+  color: white;
 }
