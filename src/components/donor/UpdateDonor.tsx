@@ -1,7 +1,6 @@
 import './NewDonor.css';
 import '../../App.css';
 import '../../Form.css'
-import axios from 'axios';
 
 import { Button, Checkbox, Form, Input, Radio } from 'antd';
 import {useState} from 'react';
@@ -22,18 +21,7 @@ function NewDonor(props: any) {
   const[country, setCountry] = useState(Country.CAN);
 
   const onFinish = (e: any) => {
-    if (e.type == DonorType.PERSON) {
-      axios.post('http://localhost:8000/donor_person', e).then((result) => {
-        debugger;
-        console.log(`created: ${result}`);
-      });
-    }
-    else if(e.type == DonorType.ORGANIZATION) {
-
-    }
-    else {
-      console.log(`unable to create donor for type: ${e.type}`);
-    }
+    console.log(e);
   }
   function onFinishFailed() {}
   function selectDonorType(e: any) {
