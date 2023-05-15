@@ -7,6 +7,7 @@ import {
   TableOutlined
 } from '@ant-design/icons';
 import NewInventoryItem from './components/inventory/NewInventoryItem';
+import CreateEmpty from './components/inventory/CreateEmpty';
 import Welcome from './components/Welcome';
 import NewDonor from './components/donor/NewDonor';
 
@@ -33,6 +34,7 @@ function App() {
   }
 
   enum MenuItemNames {
+    EmptyInventoryItem = 11,
     NewInventoryItem = 1,
     SearchInventoryItems = 2,
     NewDonor = 3,
@@ -48,7 +50,7 @@ function App() {
   const items: MenuProps['items'] = [
     getItem('inventory', 'sub1', <TableOutlined />, [
       getItem('Items', 'g1', null, [
-        getItem('new', MenuItemNames.NewInventoryItem),
+        getItem('empty', MenuItemNames.EmptyInventoryItem),
         getItem('search', MenuItemNames.SearchInventoryItems)
       ], 'group'),
       getItem('donors', 'g2', null, [
@@ -108,7 +110,7 @@ function App() {
         </div>
         <div className="App-middle">
           {menuKey == 0 && <Welcome></Welcome>}
-          {menuKey == MenuItemNames.NewInventoryItem && <NewInventoryItem></NewInventoryItem>}
+          {menuKey == MenuItemNames.EmptyInventoryItem && <CreateEmpty></CreateEmpty>}
           {menuKey == MenuItemNames.SearchInventoryItems && <div>search InventoryItems</div>}
           {menuKey == MenuItemNames.NewDonor && <NewDonor></NewDonor>}
           {menuKey == MenuItemNames.SearchDonors && <div>search Donors</div>}

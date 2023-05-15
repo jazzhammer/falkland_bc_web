@@ -78,6 +78,63 @@ function NewInventoryItem(props: any) {
         >
           <TextArea/>
         </Form.Item>
+
+        <Form.Item
+          label={<label style={{color: "white"}}>description_level</label>}
+          name="description_level"
+          rules={[{required: false, message: ''}]}
+        >
+          <TextArea/>
+        </Form.Item>
+
+        <Form.Item
+          label={<label style={{color: "white"}}>part_of</label>}
+          name="part_of"
+          rules={[{required: false, message: ''}]}
+        >
+          <TextArea/>
+        </Form.Item>
+
+        <Form.Item
+          label={<label style={{color: "white"}}>disposable_terms</label>}
+          name="disposable_terms"
+          rules={[{required: false, message: ''}]}
+        >
+          <TextArea/>
+        </Form.Item>
+
+        <Form.Item
+          label={<label style={{color: "white"}}>gmd</label>}
+          name="gmd"
+          rules={[{required: false, message: ''}]}
+        >
+          <TextArea/>
+        </Form.Item>
+
+        <Form.Item
+          label={<label style={{color: "white"}}>gmd_start</label>}
+          name="gmd_start"
+          rules={[{required: false, message: ''}]}
+        >
+          (ymd_start)
+        </Form.Item>
+
+        <Form.Item
+          label={<label style={{color: "white"}}>gmd_end</label>}
+          name="gmd_start"
+          rules={[{required: false, message: ''}]}
+        >
+          (ymd_end)
+        </Form.Item>
+
+        <Form.Item
+          label={<label style={{color: "white"}}>date_range</label>}
+          name="date_range"
+          rules={[{required: false, message: ''}]}
+        >
+          (date_range)
+        </Form.Item>
+
         <Form.Item
           label={<label style={{color: "white"}}>url</label>}
           name="last_name"

@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f17f4cf3-656f-4f59-b568-28b7db3f81d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/donor/UpdateDonor.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/inventory/UpdateInventoryItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.dev" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.stag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/inventory/CreateEmpty.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/inventory/CreateEmpty.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/InventoryItem.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/donor/NewDonor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/donor/NewDonor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/inventory/NewInventoryItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inventory/NewInventoryItem.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +42,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="2OoM8qkqEkRJphMHMY1w8cegbV9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,7 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/donor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/inventory" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -63,13 +69,13 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Shell Script" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/donor" />
       <recent name="$PROJECT_DIR$/src/components/inventory" />
+      <recent name="$PROJECT_DIR$/src/components/donor" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
@@ -85,7 +91,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682222327247</updated>
-      <workItem from="1682222330155" duration="23559000" />
+      <workItem from="1682222330155" duration="23762000" />
+      <workItem from="1682563008652" duration="30000" />
+      <workItem from="1682864327163" duration="822000" />
+      <workItem from="1683429088773" duration="3000" />
+      <workItem from="1684107573676" duration="7086000" />
     </task>
     <servers />
   </component>
