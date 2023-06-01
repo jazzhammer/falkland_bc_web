@@ -5,17 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f17f4cf3-656f-4f59-b568-28b7db3f81d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.dev" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.stag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/inventory/CreateEmpty.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/inventory/CreateEmpty.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/InventoryItem.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/inventory/EditInventoryItem.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/inventory/EditInventoryItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/inventory/edit/Book.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/inventory/edit/DescriptionId.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/inventory/edit/Manufacture.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/inventory/edit/SourceDonor.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/inventory/edit/Workflow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/inventory/list/ListInventoryItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/inventory/search/SearchInventoryItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/inventory/NewInventoryItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inventory/NewInventoryItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/inventory/CreateEmpty.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inventory/CreateEmpty.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/inventory/NewInventoryItem.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/inventory/NewInventoryItem.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/inventory/UpdateInventoryItem.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/InventoryItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/InventoryItem.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +61,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/inventory" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/inventory/search" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -74,10 +81,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/inventory/search" />
       <recent name="$PROJECT_DIR$/src/components/inventory" />
+      <recent name="$PROJECT_DIR$/src/components/inventory/list" />
+      <recent name="$PROJECT_DIR$/src/components/inventory/update" />
       <recent name="$PROJECT_DIR$/src/components/donor" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -95,7 +103,8 @@
       <workItem from="1682563008652" duration="30000" />
       <workItem from="1682864327163" duration="822000" />
       <workItem from="1683429088773" duration="3000" />
-      <workItem from="1684107573676" duration="7086000" />
+      <workItem from="1684107573676" duration="9768000" />
+      <workItem from="1684625669946" duration="13255000" />
     </task>
     <servers />
   </component>

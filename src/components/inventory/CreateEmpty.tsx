@@ -4,12 +4,15 @@ import '../../Form.css'
 import { Button, Form, Input, Radio } from 'antd';
 import { useState } from 'react';
 import InventoryItemService from '../../entity/InventoryItem';
+import { InventoryItem } from '../../entity/InventoryItem';
 
-function CreateEmpty(props: any) {
+// @ts-ignore
+function CreateEmpty({ onCreateInventoryItem }) {
 
   const onFinish = (e: any) => {
-    InventoryItemService.createInstance().then((created: any) => {
-      console.log(`created ${JSON.stringify(created)}`);
+    InventoryItemService.createInstance().then((response: any) => {
+      const created: InventoryItem = response.data;
+      onCreateInventoryItem(created);
     });
   }
 
@@ -22,8 +25,9 @@ function CreateEmpty(props: any) {
           new inventory item
         </div>
         <div className="fbc-form-explanation">
-          creating an empty inventory item provides a container, initially labeled with a creation timestamp.
-          once created, this container may be filled with details to fully describe it, in the following categories:
+          an empty inventory item is described by default property values, such as a creation timestamp.
+          once created,these values may be overwritten to fully describe the item.
+          an inventory item's properties fall into the following categories:
           <ul>workflow</ul>
           <ul>source/donor</ul>
           <ul>description & identification</ul>
