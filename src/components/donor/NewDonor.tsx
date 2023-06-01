@@ -18,8 +18,20 @@ function NewDonor(props: any) {
     USA = 2
   }
 
-  const[donorType, setDonorType] = useState(DonorType.PERSON);
+  const initialFormData = { 
+    country: Country.CAN, 
+    type: DonorType.PERSON,
+    name: null,
+    last_name: null,
+    first_name: null, 
+    phone_area_code: null,
+    phone_number: null
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
+
   const[country, setCountry] = useState(Country.CAN);
+
 
   const onFinish = (e: any) => {
     if (e.type == DonorType.PERSON) {
@@ -37,11 +49,35 @@ function NewDonor(props: any) {
   }
   function onFinishFailed() {}
   function selectDonorType(e: any) {
-    setDonorType(e.target.value)
+    setFormData({
+      ...formData,
+      type: e.target.value
+    });
   }
   function selectCountry(e: any) {
-    setCountry(e.target.value)
+    setFormData({
+      ...formData,
+      country: e.target.value
+    });
   }
+
+  const canCreate = () => {
+    // need
+    //  lastname, firstname if person
+    //  name if organization
+    // areacode, phonenumber
+      return formData?.type &&
+          formData?.country &&
+          formData?.phone_area_code &&
+          formData?.phone_number &&
+          (
+              formData.type === DonorType.PERSON ?
+              formData?.last_name &&
+              formData?.first_name :
+              formData?.name
+          )
+  }
+
   return (
     <div className="fbc-form">
       <div className="form-header">
@@ -54,7 +90,7 @@ function NewDonor(props: any) {
         labelCol={{ span: 12 }}
         wrapperCol={{ span: 16 }}
         style={{ maxWidth: 600 }}
-        initialValues={{ country: Country.CAN, type: DonorType.PERSON }}
+        initialValues={formData}
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
         autoComplete="off"
@@ -65,13 +101,13 @@ function NewDonor(props: any) {
           rules={[{ required: true, message: '' }]}
 
         >
-          <Radio.Group onChange={selectDonorType} value={donorType} className="fbc-radio-row">
+          <Radio.Group onChange={selectDonorType} value={formData.type} className="fbc-radio-row">
             <Radio value={DonorType.PERSON} style={{color: "white"}}>person</Radio>
             <Radio value={DonorType.ORGANIZATION} style={{color: "white"}}>organization</Radio>
           </Radio.Group>
         </Form.Item>
 
-        {donorType == DonorType.ORGANIZATION &&
+        {formData.type == DonorType.ORGANIZATION &&
           <Form.Item
             label={<label style={{color: "white"}}>name</label>}
             name="name"
@@ -80,7 +116,7 @@ function NewDonor(props: any) {
             <Input/>
           </Form.Item>
         }
-        {donorType == DonorType.PERSON &&
+        {formData.type == DonorType.PERSON &&
           <div>
             <Form.Item
               label={<label style={{color: "white"}}>last name</label>}
@@ -143,11 +179,13 @@ function NewDonor(props: any) {
         >
           <Input/>
         </Form.Item>
-        <Form.Item wrapperCol={{ offset: 12, span: 16 }}>
-          <Button type="primary" htmlType="submit">
-            create
-          </Button>
-        </Form.Item>
+        {canCreate() &&
+            <Form.Item wrapperCol={{offset: 12, span: 16}}>
+              <Button type="primary" htmlType="submit">
+                create
+              </Button>
+            </Form.Item>
+        }
       </Form>
     </div>
   );

@@ -5,24 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f17f4cf3-656f-4f59-b568-28b7db3f81d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/inventory/EditInventoryItem.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/inventory/EditInventoryItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/inventory/edit/Book.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/inventory/edit/DescriptionId.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/inventory/edit/Manufacture.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/inventory/edit/SourceDonor.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/inventory/edit/Workflow.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/inventory/list/ListInventoryItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/inventory/search/SearchInventoryItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/inventory/CreateEmpty.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inventory/CreateEmpty.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/inventory/NewInventoryItem.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/inventory/NewInventoryItem.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/inventory/UpdateInventoryItem.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/InventoryItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/InventoryItem.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/donor/NewDonor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/donor/NewDonor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/inventory/list/ListInventoryItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inventory/list/ListInventoryItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/inventory/search/SearchInventoryItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inventory/search/SearchInventoryItem.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +37,15 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="2OoM8qkqEkRJphMHMY1w8cegbV9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -59,9 +57,11 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/inventory/search" />
+    <property name="go.format.on.save.advertiser.fired" value="true" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -76,7 +76,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Shell Script" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -105,6 +105,7 @@
       <workItem from="1683429088773" duration="3000" />
       <workItem from="1684107573676" duration="9768000" />
       <workItem from="1684625669946" duration="13255000" />
+      <workItem from="1685635672248" duration="3147000" />
     </task>
     <servers />
   </component>
@@ -113,6 +114,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/inventory/search/SearchInventoryItem.tsx</url>
+          <line>2</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

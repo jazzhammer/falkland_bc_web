@@ -1,6 +1,3 @@
-import './EditInventoryItem.css';
-import '../../App.css';
-import '../../Form.css'
 import { Button, Form, Input, Radio } from 'antd';
 import { useState, useEffect } from 'react';
 import { InventoryItem } from '../../../entity/InventoryItem';
