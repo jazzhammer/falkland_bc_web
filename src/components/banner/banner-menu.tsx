@@ -18,7 +18,7 @@ export function BannerMenu({onSelectMenuItem}: {
         falkland bc
       </div>
       <div className={"w-full flex flex-row pt-1"}>
-        <div className={`form-header flex flex-row w-1/3  cursor-pointer hover:text-black ${selectedMenuItem==='history' ? highlighted : regular}`}
+        <div className={`form-header flex flex-row w-1/3  cursor-pointer hover:text-sand-700 ${selectedMenuItem==='history' ? highlighted : regular}`}
              onClick={() => onSelectedMenuItem('history')}
         >
           <div className={"flex flex-col w-full"}>
@@ -27,14 +27,14 @@ export function BannerMenu({onSelectMenuItem}: {
             </div>
           </div>
         </div>
-        <div className={`form-header flex flex-row w-1/3  cursor-pointer hover:text-black ${selectedMenuItem==='community' ? highlighted : regular}`}
+        <div className={`form-header flex flex-row w-1/3  cursor-pointer hover:text-sand-700 ${selectedMenuItem==='community' ? highlighted : regular}`}
              onClick={() => onSelectedMenuItem('community')}
         >
           <div className={"flex flex-col w-full pb-2"}>
             <div className={"font-bold text-center pt-4"}>community</div>
           </div>
         </div>
-        <div className={`form-header bg-algae-600 flex flex-row w-1/3  cursor-pointer hover:text-black ${selectedMenuItem==='forms & documents' ? highlighted : regular}`}
+        <div className={`form-header bg-algae-600 flex flex-row w-1/3  cursor-pointer hover:text-sand-700 ${selectedMenuItem==='forms & documents' ? highlighted : regular}`}
              onClick={() => onSelectedMenuItem('forms & documents')}
         >
           <div className={"flex flex-col w-full pl-2 pr-2 pb-2 ml-1 mr-1"}>

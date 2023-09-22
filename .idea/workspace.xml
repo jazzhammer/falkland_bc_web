@@ -5,43 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f17f4cf3-656f-4f59-b568-28b7db3f81d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/banner/banner-menu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/community/community-home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dnd-chess/board-square.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dnd-chess/board.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dnd-chess/knight.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dnd-chess/square.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dnd-chess/util.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/donor/donor-view.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/donor/list-donors.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/donor/search-donor.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/form-documents/form-documents.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/history/history-home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/history/history.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/history/map-menu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/workflow/workflow-editor.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/workflow/workflow-node.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/donor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/inventory-item.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/donor-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/inventory-item-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Welcome.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/donor/SearchSelectDonor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/donor/SearchSelectDonor.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/inventory/CreateEmpty.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inventory/CreateEmpty.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/inventory/EditInventoryItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inventory/EditInventoryItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/inventory/list/ListInventoryItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inventory/list/ListInventoryItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/inventory/search/SearchInventoryItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inventory/search/SearchInventoryItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/InventoryItem.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/banner/banner-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/banner/banner-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/donor/NewDonor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/donor/NewDonor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/donor/donor-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/donor/donor-view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/donor/list-donors.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/donor/list-donors.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/donor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/donor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +25,8 @@
         <option value="package.json" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -139,7 +110,7 @@
       <workItem from="1694610675474" duration="9990000" />
       <workItem from="1694837526107" duration="11510000" />
       <workItem from="1694893307605" duration="26840000" />
-      <workItem from="1695347995183" duration="13965000" />
+      <workItem from="1695347995183" duration="23675000" />
     </task>
     <servers />
   </component>

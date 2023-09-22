@@ -23,14 +23,14 @@ export default function ListDonors({donors}: {
   return (
     <div className={"flex flex-col"}>
       <div className={"flex flex-row"}>
-        <div className={"align-middle border-2 border-gray-300 bg-gray-200 w-48 font-bold text-center"}>last</div>
-        <div className={"align-middle border-2 border-gray-300 bg-gray-200 w-48 font-bold text-center"}>first</div>
-        <div className={"align-middle border-2 border-gray-300 bg-gray-200 w-12 font-bold text-center"}>area</div>
-        <div className={"align-middle border-2 border-gray-300 bg-gray-200 w-32 font-bold text-center"}>phone</div>
-        <div className={"align-middle border-2 border-gray-300 bg-gray-200 w-48 font-bold text-center"}>street</div>
-        <div className={"align-middle border-2 border-gray-300 bg-gray-200 w-48 font-bold text-center"}>city</div>
-        <div className={"align-middle border-2 border-gray-300 bg-gray-200 w-16 font-bold text-center"}>prov<br/>state</div>
-        <div className={"align-middle border-2 border-gray-300 bg-gray-200 w-24 font-bold text-center"}>country</div>
+        <div className={"align-middle border-2 border-gray-300 bg-docks-400 w-48 font-bold text-center pt-3"}>last</div>
+        <div className={"align-middle border-2 border-gray-300 bg-docks-400 w-48 font-bold text-center pt-3"}>first</div>
+        <div className={"align-middle border-2 border-gray-300 bg-docks-400 w-12 font-bold text-center pt-3"}>area</div>
+        <div className={"align-middle border-2 border-gray-300 bg-docks-400 w-32 font-bold text-center pt-3"}>phone</div>
+        <div className={"align-middle border-2 border-gray-300 bg-docks-400 w-48 font-bold text-center pt-3"}>street</div>
+        <div className={"align-middle border-2 border-gray-300 bg-docks-400 w-48 font-bold text-center pt-3"}>city</div>
+        <div className={"align-middle border-2 border-gray-300 bg-docks-400 w-16 font-bold text-center pt-0"}>prov<br/>state</div>
+        <div className={"align-middle border-2 border-gray-300 bg-docks-400 w-24 font-bold text-center pt-3"}>country</div>
       </div>
       {
         donorsList

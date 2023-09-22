@@ -5,25 +5,17 @@ import axios from 'axios';
 
 import { Button, Checkbox, Form, Input, Radio } from 'antd';
 import {useState} from 'react';
+import {DonorFields, DonorType} from "../../entity/donor";
+import {Country} from "../../entity/types";
 
 function NewDonor(props: any) {
 
-  enum DonorType {
-    PERSON = 1,
-    ORGANIZATION = 2
-  }
-
-  enum Country {
-    CAN = 1,
-    USA = 2
-  }
-
-  const initialFormData = { 
-    country: Country.CAN, 
+  let initialFormData: Partial<DonorFields> = {
+    country: Country.CAN,
     type: DonorType.PERSON,
     name: null,
     last_name: null,
-    first_name: null, 
+    first_name: null,
     phone_area_code: null,
     phone_number: null
   };
@@ -61,30 +53,44 @@ function NewDonor(props: any) {
     });
   }
 
+  const setFormField = (name: string, value: string): void => {
+    const next = {
+      ...formData
+    };
+    next[name] = value;
+    setFormData(next);
+    console.log(`formData: ${JSON.stringify(formData)}`);
+  }
+
   const canCreate = () => {
     // need
     //  lastname, firstname if person
     //  name if organization
     // areacode, phonenumber
-      return formData?.type &&
-          formData?.country &&
-          formData?.phone_area_code &&
-          formData?.phone_number &&
+
+    console.log(`formData.type: ${formData.type}`);
+    console.log(`formData.country: ${formData.country}`);
+    console.log(`formData.phone_area_code: ${formData.phone_area_code}`);
+    console.log(`formData.phone_number: ${formData.phone_number}`);
+    console.log(`formData.last_name: ${formData.last_name}`);
+    console.log(`formData.first_name: ${formData.first_name}`);
+    console.log(`formData.name: ${formData.name}`);
+
+      return formData.type &&
+          formData.country &&
+          formData.phone_area_code &&
+          formData.phone_number &&
           (
               formData.type === DonorType.PERSON ?
-              formData?.last_name &&
-              formData?.first_name :
-              formData?.name
+              formData.last_name &&
+              formData.first_name :
+              formData.name
           )
+
   }
 
   return (
-    <div className="fbc-form">
-      <div className="form-header">
-        <div className="fbc-form-title">
-            new donor
-        </div>
-      </div>
+    <div className="fbc-form bg-chia-900">
       <Form
         name="basic"
         labelCol={{ span: 12 }}
@@ -96,92 +102,92 @@ function NewDonor(props: any) {
         autoComplete="off"
       >
         <Form.Item
-          label={<label style={{color: "white"}}>type</label>}
+          label={<label className={"text-algae-300"}>type</label>}
           name="type"
           rules={[{ required: true, message: '' }]}
 
         >
           <Radio.Group onChange={selectDonorType} value={formData.type} className="fbc-radio-row">
-            <Radio value={DonorType.PERSON} style={{color: "white"}}>person</Radio>
-            <Radio value={DonorType.ORGANIZATION} style={{color: "white"}}>organization</Radio>
+            <Radio value={DonorType.PERSON} className={"text-algae-300"}>person</Radio>
+            <Radio value={DonorType.ORGANIZATION} className={"text-algae-300"}>organization</Radio>
           </Radio.Group>
         </Form.Item>
 
         {formData.type == DonorType.ORGANIZATION &&
           <Form.Item
-            label={<label style={{color: "white"}}>name</label>}
+            label={<label className={"text-algae-300"}>name</label>}
             name="name"
             rules={[{required: true, message: 'if donor is an organization, provide its name'}]}
           >
-            <Input/>
+            <Input onChange={(e) => setFormField('name', e.target.value)}/>
           </Form.Item>
         }
         {formData.type == DonorType.PERSON &&
           <div>
             <Form.Item
-              label={<label style={{color: "white"}}>last name</label>}
+              label={<label className={"text-algae-300"}>last name</label>}
               name="last_name"
               rules={[{required: true, message: 'if donor is a person, provide a last name'}]}
             >
-              <Input placeholder="last name"/>
+              <Input placeholder="last name" onChange={(e) => setFormField('last_name', e.target.value)}/>
             </Form.Item>
             <Form.Item
-              label={<label style={{color: "white"}}>first name</label>}
+              label={<label className={"text-algae-300"}>first name</label>}
               name="first_name"
               rules={[{required: true, message: 'if donor is a person, provide a first name'}]}
             >
-              <Input placeholder="first name"/>
+              <Input placeholder="first name" onChange={(e) => setFormField('first_name', e.target.value)}/>
             </Form.Item>
           </div>
         }
         <Form.Item
-          label={<label style={{color: "white"}}>street</label>}
+          label={<label className={"text-algae-300"}>street</label>}
           name="street"
           rules={[{required: false, message: ''}]}
         >
-          <Input placeholder="street address"/>
+          <Input placeholder="street address" onChange={(e) => setFormField('street', e.target.value)}/>
         </Form.Item>
         <Form.Item
-          label={<label style={{color: "white"}}>city</label>}
+          label={<label className={"text-algae-300"}>city</label>}
           name="city"
           rules={[{required: false, message: ''}]}
         >
-          <Input placeholder="city"/>
+          <Input placeholder="city" onChange={(e) => setFormField('city', e.target.value)}/>
         </Form.Item>
         <Form.Item
-          label={<label style={{color: "white"}}>province/state/region</label>}
+          label={<label className={"text-algae-300"}>province/state/region</label>}
           name="province_state"
           rules={[{required: false, message: ''}]}
         >
-          <Input placeholder="province or state or region"/>
+          <Input placeholder="province or state or region" onChange={(e) => setFormField('province_state', e.target.value)}/>
         </Form.Item>
         <Form.Item
-          label={<label style={{color: "white"}}>country</label>}
+          label={<label className={"text-algae-300"}>country</label>}
           name="country"
           rules={[{required: false, message: ''}]}
         >
           <Radio.Group onChange={selectCountry} value={country} className="fbc-radio-row">
-            <Radio value={Country.CAN} style={{color: "white"}}>canada</Radio>
-            <Radio value={Country.USA} style={{color: "white"}}>usa</Radio>
+            <Radio value={Country.CAN} className={"text-algae-300"}>canada</Radio>
+            <Radio value={Country.USA} className={"text-algae-300"}>usa</Radio>
           </Radio.Group>
         </Form.Item>
         <Form.Item
-          label={<label style={{color: "white"}}>area code</label>}
+          label={<label className={"text-algae-300"}>area code</label>}
           name="phone_area_code"
           rules={[{required: false, message: ''}]}
         >
-          <Input/>
+          <Input onChange={(e) => setFormField('phone_area_code', e.target.value)}/>
         </Form.Item>
         <Form.Item
-          label={<label style={{color: "white"}}>phone number</label>}
+          label={<label className={"text-algae-300"}>phone number</label>}
           name="phone_number"
           rules={[{required: false, message: ''}]}
         >
-          <Input/>
+          <Input onChange={(e) => setFormField('phone_number', e.target.value)}/>
         </Form.Item>
         {canCreate() &&
             <Form.Item wrapperCol={{offset: 12, span: 16}}>
-              <Button type="primary" htmlType="submit">
+              <Button type="primary" htmlType="submit" className={"bg-algae-700 hover:bg-algae-900 cursor-pointer active:bg-algae-300"}>
                 create
               </Button>
             </Form.Item>
