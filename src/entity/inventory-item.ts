@@ -1,22 +1,3 @@
-import axios from 'axios';
-
-const API_BASE = process.env.REACT_APP_API_BASE;
-const baseUrl = 'inventory_item/';
-
-const InventoryItemService =  {
-
-  createInstance: (): Promise<InventoryItem> => {
-    const url = `${API_BASE}${baseUrl}`;
-    return axios.post(url, {});
-  },
-
-  getMatching: (): Promise<InventoryItem[]> => {
-    const url = `${API_BASE}${baseUrl}`;
-    return axios.get(url, {});
-  }
-
-}
-
 export interface InventoryItem {
   inventory_item_id: string;
   inventory_status_id: string;
@@ -68,7 +49,6 @@ export interface InventoryItem {
   record_type: string;
   subject_names: string;
   summary: string;
-
 }
-export default InventoryItemService;
+
 

@@ -1,0 +1,9 @@
+.map-menu-layout {
+  position: relative;
+  height: 230px;
+  width: 830px;
+}
+
+.map-menu-item {
+  position: absolute;
+}

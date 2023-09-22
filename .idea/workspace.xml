@@ -5,13 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f17f4cf3-656f-4f59-b568-28b7db3f81d9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/banner/banner-menu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/community/community-home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dnd-chess/board-square.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dnd-chess/board.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dnd-chess/knight.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dnd-chess/square.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dnd-chess/util.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/donor/donor-view.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/donor/list-donors.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/donor/search-donor.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form-documents/form-documents.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/history/history-home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/history/history.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/history/map-menu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/workflow/workflow-editor.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/workflow/workflow-node.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/donor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/inventory-item.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/donor-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/inventory-item-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/donor/NewDonor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/donor/NewDonor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Welcome.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/donor/SearchSelectDonor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/donor/SearchSelectDonor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/inventory/CreateEmpty.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inventory/CreateEmpty.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/inventory/EditInventoryItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inventory/EditInventoryItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/inventory/list/ListInventoryItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inventory/list/ListInventoryItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/inventory/search/SearchInventoryItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inventory/search/SearchInventoryItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/InventoryItem.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +51,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package.json" />
+        <option value="HTML File" />
         <option value="CSS File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -46,46 +79,42 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2OoM8qkqEkRJphMHMY1w8cegbV9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="go.format.on.save.advertiser.fired" value="true" />
-    <property name="go.formatter.settings.were.checked" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.standard" value="" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Facets" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Shell Script" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jazzhammer/Documents/workspace_2013/falkland_bc_web/src/components&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/jazzhammer/Documents/workspace_2013/falkland_bc_web/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/inventory/search" />
       <recent name="$PROJECT_DIR$/src/components/inventory" />
       <recent name="$PROJECT_DIR$/src/components/inventory/list" />
       <recent name="$PROJECT_DIR$/src/components/inventory/update" />
-      <recent name="$PROJECT_DIR$/src/components/donor" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -106,6 +135,11 @@
       <workItem from="1684107573676" duration="9768000" />
       <workItem from="1684625669946" duration="13255000" />
       <workItem from="1685635672248" duration="3147000" />
+      <workItem from="1694525377634" duration="726000" />
+      <workItem from="1694610675474" duration="9990000" />
+      <workItem from="1694837526107" duration="11510000" />
+      <workItem from="1694893307605" duration="26840000" />
+      <workItem from="1695347995183" duration="13965000" />
     </task>
     <servers />
   </component>
@@ -124,7 +158,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/inventory/search/SearchInventoryItem.tsx</url>
           <line>2</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

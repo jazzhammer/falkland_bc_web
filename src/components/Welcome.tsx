@@ -5,10 +5,8 @@ import '../App.css';
 function Welcome() {
 
   return (
-    <div>
-      <div className="form-header">
-          select menu item
-      </div>
+    <div className={"w-full flex flex-row"}>
+      
     </div>
   );
 }

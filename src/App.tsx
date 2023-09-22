@@ -2,19 +2,17 @@ import './App.css';
 import { useState, useContext } from 'react';
 import React from 'react';
 import type { MenuProps } from 'antd';
-import { Menu } from 'antd';
 import {
   UserOutlined,
   TableOutlined
 } from '@ant-design/icons';
-import EditInventoryItem from './components/inventory/EditInventoryItem';
-import CreateEmpty from './components/inventory/CreateEmpty';
-import Welcome from './components/Welcome';
-import NewDonor from './components/donor/NewDonor';
-import { InventoryItem } from './entity/InventoryItem';
+import { InventoryItem } from './entity/inventory-item';
 import { notification } from 'antd';
 import type { NotificationPlacement } from 'antd/es/notification/interface';
-import SearchInventoryItem from './components/inventory/search/SearchInventoryItem';
+import {BannerMenu} from "./components/banner/banner-menu";
+import {HistoryHome} from "./components/history/history-home";
+import {CommunityHome} from "./components/community/community-home";
+import {FormDocumentsHome} from "./components/form-documents/form-documents";
 
 interface RootContextValue {
   inventoryItem: InventoryItem | null
@@ -126,45 +124,20 @@ function App() {
 
   function RootDisplay() {
     const rootContextValue = useContext(RootContext);
-
+    const [selectedMenuItem, setSelectedMenuItem] = useState('');
+    const highlighted = 'border-t-2 border-l-2 border-r-2 border-black bg-algae-400';
+    const regular = 'border-b-2 border-b-black bg-algae-600';
+    const onSelectedMenuItem = (selection: string) => {
+      setSelectedMenuItem(selection);
+    }
     return (
       <RootContext.Provider value={rootContextValue}>
-        <div className="App-header">
-          <b>falkland bc</b>
+        <BannerMenu onSelectMenuItem={onSelectedMenuItem}/>
+        <div className={"h-screen w-full p-2"}>
+          {selectedMenuItem === 'history' && <HistoryHome/>}
+          {selectedMenuItem === 'community' && <CommunityHome/>}
+          {selectedMenuItem === 'forms & documents' && <FormDocumentsHome/>}
         </div>
-        <div className="App-header-by-line">
-          <i>history, community, and forum</i>
-        </div>
-        <div className="App-content">
-          <div className="App-left">
-            <Menu
-              onClick={onMenuSelection}
-              style={{ width: 256 }}
-              defaultSelectedKeys={['0']}
-              defaultOpenKeys={[]}
-              mode="inline"
-              items={items}
-            />
-          </div>
-          <div className="App-middle">
-            {menuKey == 0 && <Welcome></Welcome>}
-            {menuKey == MenuItemNames.EmptyInventoryItem && <CreateEmpty onCreateInventoryItem={onCreateInventoryItem}></CreateEmpty>}
-            {menuKey == MenuItemNames.EditInventoryItem && <EditInventoryItem onEditInventoryItem={onEditInventoryItem} editable={inventoryItem}></EditInventoryItem>}
-            {menuKey == MenuItemNames.SearchInventoryItems && <SearchInventoryItem>search InventoryItems</SearchInventoryItem>}
-            {menuKey == MenuItemNames.NewDonor && <NewDonor></NewDonor>}
-            {menuKey == MenuItemNames.SearchDonors && <div>search Donors</div>}
-            {menuKey == MenuItemNames.NewLocation && <div>new Location</div>}
-            {menuKey == MenuItemNames.SearchLocations && <div>search Locations</div>}
-            {menuKey == MenuItemNames.NewStatus && <div>new Status</div>}
-            {menuKey == MenuItemNames.SearchStatuss && <div>search Statuses</div>}
-            {menuKey == MenuItemNames.NewUser && <div>new User</div>}
-            {menuKey == MenuItemNames.SearchUsers && <div>search Users</div>}
-          </div>
-          <div className="App-right">
-            {/*right*/}
-          </div>
-        </div>
-        <div className="App-footer"></div>
       </RootContext.Provider>
     );
 

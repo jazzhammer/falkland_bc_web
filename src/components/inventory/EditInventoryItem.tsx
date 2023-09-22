@@ -9,7 +9,7 @@ import EditManufacture from './edit/Manufacture';
 import EditDescriptionId from './edit/DescriptionId';
 import EditBook from './edit/Book';
 
-import { InventoryItem } from '../../entity/InventoryItem';
+import { InventoryItem } from '../../entity/inventory-item';
 import { RootContext } from '../../App';
 
 function EditInventoryItem(props: any) {

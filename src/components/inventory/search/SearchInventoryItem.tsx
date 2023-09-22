@@ -2,7 +2,7 @@ import { Button, Form, Input, Radio } from 'antd';
 import { useState } from 'react';
 import ListInventoryItem from '../list/ListInventoryItem';
 
-import { InventoryItem } from '../../../entity/InventoryItem';
+import { InventoryItem } from '../../../entity/inventory-item';
 
 function SearchInventoryItem(props: any) {
 

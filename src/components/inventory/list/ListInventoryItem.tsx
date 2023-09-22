@@ -1,7 +1,7 @@
 import { Button, Form, Input, Radio } from 'antd';
 import { useState, useEffect } from 'react';
-import { InventoryItem } from '../../../entity/InventoryItem';
-import InventoryItemService from '../../../entity/InventoryItem';
+import { InventoryItem } from '../../../entity/inventory-item';
+import InventoryItemService from "../../../service/inventory-item-service";
 
 function ListInventoryItem(props: any) {
 
