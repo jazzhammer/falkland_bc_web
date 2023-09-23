@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f17f4cf3-656f-4f59-b568-28b7db3f81d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/entity/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/banner/banner-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/banner/banner-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/donor/NewDonor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/donor/NewDonor.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/donor/donor-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/donor/donor-view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/donor/list-donors.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/donor/list-donors.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/donor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/donor.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,6 +89,11 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="tailwind.config.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="tailwind.config.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -110,7 +113,8 @@
       <workItem from="1694610675474" duration="9990000" />
       <workItem from="1694837526107" duration="11510000" />
       <workItem from="1694893307605" duration="26840000" />
-      <workItem from="1695347995183" duration="23675000" />
+      <workItem from="1695347995183" duration="26999000" />
+      <workItem from="1695425417375" duration="2588000" />
     </task>
     <servers />
   </component>

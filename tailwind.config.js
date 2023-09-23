@@ -8,8 +8,8 @@ module.exports = {
     extend: {
       colors: {
         docks: {
-          900: '#d8d6c7',
-          800: '#d0cdbb', //table border
+          900: '#d8d6c7', // new form bg
+          800: '#d0cdbb', // table border
           700: '#c8c5af',
           600: '#b7b397',
           500: '#afaa8b',
@@ -52,8 +52,8 @@ module.exports = {
           100: '#000000'
         },
         chia: {
-          900: '#42d08d', // new form bg
-          800: '#30c47e', //new
+          900: '#42d08d',
+          800: '#30c47e', // new
           700: '#2aab6e',
           600: '#24935e',
           500: '#1e7a4f',

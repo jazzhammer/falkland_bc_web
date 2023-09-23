@@ -7,6 +7,8 @@ import { Button, Checkbox, Form, Input, Radio } from 'antd';
 import {useState} from 'react';
 import {DonorFields, DonorType} from "../../entity/donor";
 import {Country} from "../../entity/types";
+import {notification} from 'antd';
+
 
 function NewDonor(props: any) {
 
@@ -23,7 +25,14 @@ function NewDonor(props: any) {
   const [formData, setFormData] = useState(initialFormData);
 
   const[country, setCountry] = useState(Country.CAN);
-
+  const [api, contextHolder] = notification.useNotification();
+  const notifyCannotCreate = () => {
+    api.open({
+      message: 'failed to create:',
+      description:
+        'required fields not complete',
+    });
+  };
 
   const onFinish = (e: any) => {
     if (e.type == DonorType.PERSON) {
@@ -68,18 +77,20 @@ function NewDonor(props: any) {
     //  name if organization
     // areacode, phonenumber
 
-    console.log(`formData.type: ${formData.type}`);
-    console.log(`formData.country: ${formData.country}`);
-    console.log(`formData.phone_area_code: ${formData.phone_area_code}`);
-    console.log(`formData.phone_number: ${formData.phone_number}`);
-    console.log(`formData.last_name: ${formData.last_name}`);
-    console.log(`formData.first_name: ${formData.first_name}`);
-    console.log(`formData.name: ${formData.name}`);
+    // console.log(`formData.type: ${formData.type}`);
+    // console.log(`formData.country: ${formData.country}`);
+    // console.log(`formData.phone_area_code: ${formData.phone_area_code}`);
+    // console.log(`formData.phone_number: ${formData.phone_number}`);
+    // console.log(`formData.last_name: ${formData.last_name}`);
+    // console.log(`formData.first_name: ${formData.first_name}`);
+    // console.log(`formData.name: ${formData.name}`);
 
       return formData.type &&
           formData.country &&
           formData.phone_area_code &&
+          formData.phone_area_code?.length === 3 &&
           formData.phone_number &&
+          formData.phone_number?.length === 7 &&
           (
               formData.type === DonorType.PERSON ?
               formData.last_name &&
@@ -89,8 +100,16 @@ function NewDonor(props: any) {
 
   }
 
+  const createDonor = async (): Promise<void> => {
+    if (canCreate()) {
+
+    } else {
+      notifyCannotCreate();
+    }
+  }
+
   return (
-    <div className="fbc-form bg-chia-900">
+    <div className="fbc-form bg-docks-900">
       <Form
         name="basic"
         labelCol={{ span: 12 }}
@@ -174,20 +193,21 @@ function NewDonor(props: any) {
         <Form.Item
           label={<label className={"text-algae-300"}>area code</label>}
           name="phone_area_code"
-          rules={[{required: false, message: ''}]}
+          rules={[{required: true, message: 'require 3 digits'}]}
         >
           <Input onChange={(e) => setFormField('phone_area_code', e.target.value)}/>
         </Form.Item>
         <Form.Item
           label={<label className={"text-algae-300"}>phone number</label>}
           name="phone_number"
-          rules={[{required: false, message: ''}]}
+          rules={[{required: true, message: 'require 7 digits'}]}
         >
           <Input onChange={(e) => setFormField('phone_number', e.target.value)}/>
         </Form.Item>
         {canCreate() &&
             <Form.Item wrapperCol={{offset: 12, span: 16}}>
-              <Button type="primary" htmlType="submit" className={"bg-algae-700 hover:bg-algae-900 cursor-pointer active:bg-algae-300"}>
+              <Button onClick={createDonor}
+                      type="primary" htmlType="submit" className={"bg-algae-700 hover:bg-algae-900 cursor-pointer active:bg-algae-300"}>
                 create
               </Button>
             </Form.Item>

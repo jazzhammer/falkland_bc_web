@@ -34,9 +34,12 @@ export default function DonorView() {
         {
           donor && <div>details for donor {donor.fields.last_name?.toUpperCase()} </div>
         }
-        <div onClick={newDonor} className={"ml-2 mr-2  pl-1 pr-1 bg-algae-700 hover:bg-algae-900 cursor-pointer active:bg-algae-300"}>new donor</div>
         {
-          mode && mode === "newDonor" && <div>creating donor...</div>
+          mode !== 'newDonor' &&
+          <div onClick={newDonor} className={"ml-2 mr-2  pl-1 pr-1 bg-algae-700 hover:bg-algae-900 cursor-pointer active:bg-algae-300"}>new donor</div>
+        }
+        {
+          mode && mode === "newDonor" && <div className={"ml-2"}>creating donor...</div>
         }
       </div>
       {
